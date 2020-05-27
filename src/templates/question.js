@@ -1,7 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import QuestionList from "../components/question-list"
+import QuestionList from '../components/trending-questions'
+import TrendingTags from '../components/trending-tags'
 
 const Question = ({ pageContext }) => (
   <Layout>
@@ -18,7 +19,9 @@ const Question = ({ pageContext }) => (
           ))
         }
       </ul>
-    <QuestionList/>
+    <TrendingTags />
+
+    <QuestionList />
   </Layout>
 )
 

@@ -14,9 +14,10 @@ const Header = ({ siteTitle }) =>  (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        height: '100px'
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, float: 'left' }}>
       
         <Link
           to="/"
@@ -25,10 +26,10 @@ const Header = ({ siteTitle }) =>  (
             textDecoration: `none`,
           }}
         >
-      
           {siteTitle}
         </Link>
       </h1>
+      <input style={{ float: 'right', marginTop: '20px',fontSize: '16px', width: '300px', paddingLeft: '10px' }} type="text" placeholder="tags, questions, users, etc.." />
 
     </div>
   </header>
