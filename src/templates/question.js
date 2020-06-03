@@ -100,9 +100,9 @@ const Question = ({ pageContext }) => {
         <Tab
           id='rx'
           title='Line Chart'
-          panel={<OptionsPie options={pageContext.options} />}
+          panel={<RenderConstruction />}
         />
-        <Tab id='rv' title='Pie Chart' panel={<RenderConstruction />} />
+        <Tab id='rv' title='Pie Chart' panel={<OptionsPie options={pageContext.options} />} />
       </Tabs>
 
       <Divider />
