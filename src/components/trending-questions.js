@@ -7,7 +7,7 @@ const QuestionsColumn = (props) => {
     <ul style={{ listStyle: 'none' }}>
       {Questions.slice(props.start, props.end).map((question, index) => (
         <li key={`link-${index}`}>
-          <Link key={`question-${index}`} to={`/question/${index}`}>
+          <Link key={`question-${index}`} to={`/question/${index + props.start}`}>
             {question.title}
           </Link>
         </li>

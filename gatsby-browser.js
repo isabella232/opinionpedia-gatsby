@@ -5,3 +5,11 @@
  */
 
 // You can delete this file if you're not using it
+
+
+
+
+import './node_modules/@blueprintjs/core/lib/css/blueprint.css';
+import './node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css';
+import './node_modules/@blueprintjs/table/lib/css/table.css';
+import './src/style/style.css';

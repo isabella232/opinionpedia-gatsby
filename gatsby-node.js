@@ -7,6 +7,7 @@ exports.createPages = ({ actions: { createPage } }) => {
       component: require.resolve("./src/templates/question.js"),
       context: {
         title: question.title,
+        tags: question.tags,
         options: question.options
       },
     })
